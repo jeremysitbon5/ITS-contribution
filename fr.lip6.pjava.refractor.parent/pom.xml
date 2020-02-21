@@ -10,8 +10,8 @@
 	</prerequisites>
 
 
-	<groupId>fr.lip6.move.gal.contribution</groupId>
-	<artifactId>fr.lip6.move.gal.contribution.parent</artifactId>
+	<groupId>fr.lip6.pjava.refractor</groupId>
+	<artifactId>fr.lip6.pjava.refractor.parent</artifactId>
 	<packaging>pom</packaging>
 	<version>1.0.0-SNAPSHOT</version>
 	<name>ITS-tools ccontribution</name>
@@ -19,13 +19,13 @@
 
 	<modules>
 		<!-- Logic + functionality plugin -->
-		<module>../fr.lip6.move.gal.contribution</module>
+		<module>../fr.lip6.pjava.refractor</module>
 		<!-- ui plugin : a button to invoke the behavior -->
-		<module>../fr.lip6.move.gal.contribution.ui</module>
+		<module>../fr.lip6.pjava.refractor.ui</module>
 		<!-- feature plugin : to package the functionality-->
-		<module>../fr.lip6.move.gal.contribution.feature</module>
+		<module>../fr.lip6.pjava.refractor.feature</module>
 		<!-- Build an update site -->
-		<module>../fr.lip6.move.gal.contribution.updatesite</module>
+		<module>../fr.lip6.pjava.refractor.updatesite</module>
 	</modules>
 
 	<scm>
@@ -44,10 +44,10 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<junit-version>4.8.1</junit-version>
 		<eclipse-site>http://download.eclipse.org/releases/${platform-version-name}</eclipse-site>
-		<!-- EDIT THIS ORBIT SITE FOR NEXT RELEASE : this is oxygen.1a -->
-		<orbit-site>http://download.eclipse.org/tools/orbit/downloads/drops/R20170919201930/repository/</orbit-site>
-		<platform-version-name>oxygen</platform-version-name>
-		<tycho-version>1.0.0</tycho-version>
+		<!-- EDIT THIS ORBIT SITE FOR NEXT RELEASE : this is 19-12  -->
+		<orbit-site>http://download.eclipse.org/tools/orbit/downloads/drops/R20191126223242/repository/</orbit-site>
+		<platform-version-name>19-12</platform-version-name>
+		<tycho-version>1.6.0</tycho-version>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
@@ -321,21 +321,6 @@
 	</pluginRepositories>
 
 	<repositories>
-		<!-- <repository> <id>XText light</id> <layout>p2</layout> <url>https://yanntm.github.io/Xtext-Light/</url> 
-			</repository> -->
-
-		<repository>
-			<id>Xtext latest</id>
-			<layout>p2</layout>
-			<url>http://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.13.0/</url>
-		</repository>
-		
-		<repository>
-			<id>ITSTools</id>
-			<layout>p2</layout>
-			<url>https://lip6.github.io/ITSTools/</url>
-		</repository>
-
 		<repository>
 			<id>Eclipse current release</id>
 			<layout>p2</layout>
